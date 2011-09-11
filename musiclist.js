@@ -215,18 +215,29 @@ albums:
 
 document.write('<div id="musiclist">');
 
-console.log(iTunes[0]);
-console.log(iTunes[0].albums[0]);
+/*console.log(iTunes[0]);
+console.log(iTunes[0].albums[0]);*/
 
-document.write('<div id="alternative">' + iTunes[0].genre);
+document.write('<div id="alternative">' + iTunes[0].genre + '<ul>');
 
-var genre = iTunes[0];
-for(var i=0; i<iTunes[0].albums.length; i++) {
-	var album = genre.albums[i];
-	console.log(genre.albums.length);
-	document.write('<ul>' + album.title + '</ul>');
-		console.log(album.title);
+var alternative = iTunes[0];
+for(var i=0; i<alternative.albums.length; i++) {
+	var album = alternative.albums[i];
+	/*console.log(genre.albums.length);
+	console.log(album.title);*/
+	document.write('<li>' + album.title + '</li>');
+	
+	for(var j=0; j<album.songs.length; j++) {
+		var song = album.songs[j];
+		console.log(song.title);
+		document.write('<li>' + song + '</li>');
+	}
+	
+	
+	console.log(album.songs.length);
+	
 }
+document.write('<ul>');
 
 
 /*for(var i=0; i<iTunes.length; i++) {
