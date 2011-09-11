@@ -1,0 +1,24 @@
+File Structure in mind
+
+<div id="musiclist"> <!-- container for the whole list body -->
+   <div id="alternative">
+         <div class="alternativealbums">
+              <ul>
+                    <li>album1</li>
+                         <ul id="album1songs">
+                                <li>song 1</li>
+                                <li>song 2</li>
+                                <li>song 3</li>
+                                <li>song 4</li>
+                         </ul>
+                    <li>album2</li>
+                         <ul id="album2songs">
+                                <li>song 1</li>
+                                <li>song 2</li>
+                                <li>song 3</li>
+                                <li>song 4</li>
+                         </ul>
+               </ul>
+        </div>
+   </div>
+</div>

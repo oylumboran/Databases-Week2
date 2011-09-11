@@ -211,9 +211,6 @@ albums:
 },
 ];
 
-
-
-	
 //function showSongs(){
 
 document.write('<div id="musiclist">');
