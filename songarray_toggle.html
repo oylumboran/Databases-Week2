@@ -11,7 +11,7 @@
 	<body>
 	
 	<!-- show Alternative songs -->
-	<altbutton>Alternative</altbutton>
+	<button class="alt">Alternative</button>
 	<div id="showaltsongs">
 	<script type="text/javascript" language="JavaScript">
          alternative();
@@ -19,14 +19,14 @@
 	</div>
 	
 	<script>
-	$("altbutton").click(function () {
+	$("button.alt").click(function () {
 	$("#showaltsongs").toggle("slow");
 	});
 	</script>
 	
 	</br>
 	<!-- show Classical songs -->
-	<classbutton>Classical</classbutton>
+	<button class="class">Classical</button>
 	<div id="showclasssongs">
 	<script type="text/javascript" language="JavaScript">
          classical();
@@ -34,7 +34,7 @@
 	</div>
 	
 	<script>
-	$("classbutton").click(function () {
+	$("button.class").click(function () {
 	$("#showclasssongs").toggle("slow");
 	});
 	</script>
