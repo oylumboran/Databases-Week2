@@ -225,14 +225,15 @@ for(var i=0; i<alternative.albums.length; i++) {
 	var album = alternative.albums[i];
 	/*console.log(genre.albums.length);
 	console.log(album.title);*/
-	document.write('<li>' + album.title + '</li>');
-	document.write('<ul>');
+	document.write('<li>' + album.title + '</li><ul>');
+	
 	
 	for(var j=0; j<album.songs.length; j++) {
 		var song = album.songs[j];
 		console.log(song.title);
 		document.write('<li>' + song + '</li>');
 	}
+	document.write('</ul>');
 	
 	
 	console.log(album.songs.length);
