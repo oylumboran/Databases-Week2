@@ -219,12 +219,15 @@ albums:
 document.write('<div id="musiclist">');
 
 console.log(iTunes[0]);
+console.log(iTunes[0].albums[0]);
 
 document.write('<div id="alternative">' + iTunes[0].genre);
+
 var genre = iTunes[0];
-for(var i=0; i<genre.length; i++) {
-	var album = genre.albums[k];
-	document.write('<div id="albums">' + album.title);
+for(var i=0; i<iTunes[0].albums.length; i++) {
+	var album = genre.albums[i];
+	console.log(genre.albums.length);
+	document.write('<ul>' + album.title + '</ul>');
 		console.log(album.title);
 }
 
