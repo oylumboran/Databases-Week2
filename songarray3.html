@@ -6,17 +6,64 @@
 	
 	<script src="musiclist.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.js" type="text/javascript"></script>
+    <script>
+	$(document).ready(function(){
+	/*$("div").hover(
+	  function () {
+		$(this).addClass("hover");
+	  },
+	  function () {
+		$(this).removeClass("hover");
+	  }
+	);*/
+	
+	/*$("li.firstitem").hover(
+	  function () {
+		$(".songs").show();
+	  },
+	  function () {
+		$(".songs").hide();
+	  }
+	);*/
+	
+
+	$("li.firstitem").hover(function() {
+		$(".songs").animate({opacity: "show"}, "slow");
+	}, function() {
+		$(".songs").animate({opacity: "hide"}, "fast");
+	});
+
+
+});
+	</script>
+    <style type="text/css">
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+	}
+	ul {
+		list-style-type: none;
+	}
+	/*ul.albumlist{
+		postion: relative;
+	}
+	li.firstitem{
+		postion: relative;
+	}
+	ul.albumlist ul.songs {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}*/
+	.songs {
+		display: none;
+		
+	}
+	</style>
 	</head>
 	
 	<body>
 	
-	<div id="popsongs">
-	
-	</div>
-	
-	<div class="genre">
-	
-	</div>
 	
 	
 	</body>
