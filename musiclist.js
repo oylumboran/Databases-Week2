@@ -226,6 +226,7 @@ for(var i=0; i<alternative.albums.length; i++) {
 	/*console.log(genre.albums.length);
 	console.log(album.title);*/
 	document.write('<li>' + album.title + '</li>');
+	document.write('<ul>');
 	
 	for(var j=0; j<album.songs.length; j++) {
 		var song = album.songs[j];
