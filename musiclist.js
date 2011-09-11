@@ -240,29 +240,54 @@ for(var i=0; i<alternative.albums.length; i++) {
 	
 }
 document.write('<ul>');
-
-
-/*for(var i=0; i<iTunes.length; i++) {
-
-	var genres = iTunes[i];
-	console.log(genres.genre);
-	
-	for(var k=0; k<genres.albums.length; k++){
-	
-		var album = genres.albums[k];
-		console.log(album.title);
-		console.log(album.artist);
-		}
-	console.log(" ");
-	
-	
-	var size = genres.albums.length;
-	document.write(size);
-	document.write("   ");
-	
-//	genre.css("width",size*10+"px"); 
-	
-}*/
 document.write('</div>');
+
+document.write('<div id="classical">' + iTunes[1].genre + '<ul>');
+
+var classical = iTunes[1];
+for(var i=0; i<classical.albums.length; i++) {
+	var album = classical.albums[i];
+	/*console.log(genre.albums.length);
+	console.log(album.title);*/
+	document.write('<li>' + album.title + '</li><ul>');
 	
-//	}
+	
+	for(var j=0; j<album.songs.length; j++) {
+		var song = album.songs[j];
+		console.log(song.title);
+		document.write('<li>' + song + '</li>');
+	}
+	document.write('</ul>');
+	
+	
+	console.log(album.songs.length);
+	
+}
+document.write('<ul>');
+
+document.write('</div>');
+
+document.write('<div id="classical">' + iTunes[2].genre + '<ul>');
+
+var electronic = iTunes[2];
+for(var i=0; i<electronic.albums.length; i++) {
+	var album = electronic.albums[i];
+	/*console.log(genre.albums.length);
+	console.log(album.title);*/
+	document.write('<li>' + album.title + '</li><ul>');
+	
+	
+	for(var j=0; j<album.songs.length; j++) {
+		var song = album.songs[j];
+		console.log(song.title);
+		document.write('<li>' + song + '</li>');
+	}
+	document.write('</ul>');
+	
+	
+	console.log(album.songs.length);
+	
+}
+document.write('<ul>');
+
+document.write('</div>');
