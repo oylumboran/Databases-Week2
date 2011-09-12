@@ -243,16 +243,16 @@ for(var i=0; i<alternative.albums.length; i++) {
 	document.write('<li>' + album.title + '</li>');
 	document.write('<li class="firstitem">'+'<img src="' + album.image + '">');
 	
-	
+	document.write('<ul class="songs">');
 	
 	for(var j=0; j<album.songs.length; j++) {
-		document.write('<ul class="songs">');
+		
 		var song = album.songs[j];
 		console.log(song.title);
 		document.write('<li>' + song + '</li>');
-		document.write('</ul>');
+		
 	}
-	
+	document.write('</ul>');
 	document.write('</li>' );
 	
 	console.log(album.songs.length);
