@@ -1,17 +1,13 @@
 
 
 ul, li {
-
 list-style-type:none;
-
 }
 
 
 li img {
-
 width:250px;
 height:250px;
-
 }
 
 #musiclist {
@@ -45,6 +41,5 @@ width:700px;
 }
 
 #electronic ul li.firstitem{
-
 float: left;
 }
