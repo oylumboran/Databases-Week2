@@ -10,24 +10,28 @@ albums:
 	{
 	artist: "Architecture in Helsinki",
 	title:"In Case We Die",
+	image: "img/01.jpg",
 	songs:["Neverevereverdid", "It's 5!", "Tiny Paintings", "Wishbone", "Maybe You Can Owe Me"]
 	},
 	
 	{
 	artist: "Broken Bells",
 	title:"Broken Bells",
+	image: "img/02.jpg",
 	songs:["The High Road", "Vaporize", "Your Head Is on Fire", "The Ghost Inside"]
 	},
 	
 	{
 	artist: "Feist",
 	title:"The Reminder",
+	image: "img/03.jpg",
 	songs:["So Sorry", "I Feel It All", "My Moon My Man", "The Park"]
 	},
 	
 	{
 	artist: "Gorillaz",
 	title:"Plastic Beach",
+	image: "img/04.jpg",
 	songs:["Plastic Beach", "Orchestral Intro", "Welcome to the World", "White Flag"]
 	},
 	
@@ -226,7 +230,8 @@ for(var i=0; i<alternative.albums.length; i++) {
 	var album = alternative.albums[i];
 	/*console.log(genre.albums.length);
 	console.log(album.title);*/
-	document.write('<li>' + album.title + '</li><ul>');
+	document.write('<li class="firstitem">'+'<img src="' + album.image + '">'+'</li>' );
+	document.write('<li>' + album.title + '</li><ul class="songs">');
 	
 	
 	for(var j=0; j<album.songs.length; j++) {
