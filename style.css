@@ -1,19 +1,60 @@
+body{
+font-family:Helvetica;
+}
 
 
-ul, li {
+//text styles
+
+h1{
+text-transform:uppercase;
+}
+
+//list styles
+
+li{
 list-style-type:none;
 }
 
+li.firstitem, ul.songs{
+list-style-type:none;
+}
+
+ul {
+font-family: 'Rokkitt', serif;
+list-style-type:none;
+color:#FF6699;
+}
+
+ul.songs {
+
+font-family: Helvetica;
+font-size: 10px;
+color:#666666;
+}
 
 li img {
 width:250px;
 height:250px;
+clear:both;
+}
+
+//div styles
+
+#header{
+width:700px;
+height:40px;
+background:#66666;
+color:#FFFFF;
+}
+
+#main{
+width:700px;
+margin:10 auto;
 }
 
 #musiclist {
 width:700px;
 margin: 0 auto;
-
 }
 
 #showaltsongs{
