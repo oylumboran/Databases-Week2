@@ -1,0 +1,51 @@
+body {
+font:Helvetica;
+
+ul, li {
+
+list-style-type:none;
+
+}
+
+
+li img {
+
+width:250px;
+height:250px;
+
+}
+
+#musiclist {
+width:700px;
+margin: 0 auto;
+
+}
+
+#showaltsongs{
+width:700px;
+position:relative;
+}
+
+#alternative ul li.firstitem{
+margin:10px;
+float: left;
+}
+
+#classical{
+width:700px;
+
+}
+#classical ul li.firstitem{
+
+float: left;
+}
+
+#electronic{
+width:700px;
+
+}
+
+#electronic ul li.firstitem{
+
+float: left;
+}
