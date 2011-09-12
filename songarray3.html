@@ -7,34 +7,36 @@
 	<script src="musiclist.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.js" type="text/javascript"></script>
     <script>
-	$(document).ready(function(){
-	/*$("div").hover(
-	  function () {
-		$(this).addClass("hover");
-	  },
-	  function () {
-		$(this).removeClass("hover");
-	  }
-	);*/
+// 	$(document).ready(function(){
+// 	/*$("div").hover(
+// 	  function () {
+// 		$(this).addClass("hover");
+// 	  },
+// 	  function () {
+// 		$(this).removeClass("hover");
+// 	  }
+// 	);*/
+// 	
+// 	/*$("li.firstitem").hover(
+// 	  function () {
+// 		$(".songs").show();
+// 	  },
+// 	  function () {
+// 		$(".songs").hide();
+// 	  }
+// 	);*/
+// 	
+// 
+// 	$("li.firstitem").hover(function() {
+// 		$(".songs").animate({opacity: "show"}, "slow");
+// 	}, function() {
+// 		$(".songs").animate({opacity: "hide"}, "fast");
+// 	});
+// 
+// 
+// 	});
 	
-	/*$("li.firstitem").hover(
-	  function () {
-		$(".songs").show();
-	  },
-	  function () {
-		$(".songs").hide();
-	  }
-	);*/
 	
-
-	$("li.firstitem").hover(function() {
-		$(".songs").animate({opacity: "show"}, "slow");
-	}, function() {
-		$(".songs").animate({opacity: "hide"}, "fast");
-	});
-
-
-});
 	</script>
     <style type="text/css">
 	body {
@@ -63,6 +65,58 @@
 	</head>
 	
 	<body>
+	
+	<!-- show Alternative songs -->
+	<button class="alt">Alternative</button>
+	<div id="showaltsongs">
+	<script type="text/javascript" language="JavaScript">
+         alternative();
+      </script>
+	</div>
+	
+	<script>
+	$("button.alt").click(function () {
+	$("#showaltsongs").toggle("slow");
+	});
+	
+	
+	</script>
+	
+	</br>
+	
+	<!-- show Classical songs -->
+	<button class="class">Classical</button>
+	<div id="showclasssongs">
+	<script type="text/javascript" language="JavaScript">
+         classical();
+      </script>
+	</div>
+	
+	<script>
+	$("button.class").click(function () {
+	$("#showclasssongs").toggle("slow");
+	});
+	
+	
+	</script>
+	
+	</br>
+	
+	<!-- show Electronic songs -->
+	<button class="elec">Electronic</button>
+	<div id="showelecsongs">
+	<script type="text/javascript" language="JavaScript">
+         electronic();
+      </script>
+	</div>
+	
+	<script>
+	$("button.elec").click(function () {
+	$("#showelecsongs").toggle("slow");
+	});
+	</script>
+	
+	
 	
 	
 	

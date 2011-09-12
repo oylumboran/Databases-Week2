@@ -2,10 +2,13 @@
 
 <html>
 	<head>
+	
 	<title>Itunes Songs Array</title>
 	
 	<script src="musiclist2.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.js" type="text/javascript"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
 	</head>
 	
 	<body>
@@ -24,7 +27,7 @@
 	});
 	</script>
 	
-	</br>
+	</br></br>
 	<!-- show Classical songs -->
 	<button class="class">Classical</button>
 	<div id="showclasssongs">
@@ -36,6 +39,22 @@
 	<script>
 	$("button.class").click(function () {
 	$("#showclasssongs").toggle("slow");
+	});
+	</script>
+	
+	</br></br>
+	
+	<!-- show Electronic songs -->
+	<button class="elec">Electronic</button>
+	<div id="showelecsongs">
+	<script type="text/javascript" language="JavaScript">
+         electronic();
+      </script>
+	</div>
+	
+	<script>
+	$("button.elec").click(function () {
+	$("#showelecsongs").toggle("slow");
 	});
 	</script>
 	
